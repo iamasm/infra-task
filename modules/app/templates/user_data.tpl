@@ -12,8 +12,7 @@ set :port, 8080
 set :bind, '0.0.0.0'
 
 configure do
-  client = Mongo::Connection.new "${mongo_address}"
-  db = client['example_data']
+  db = Mongo::Client.new([ "${mongo_address}" ], :database => 'example_data')
   set :mongo_db, db['restaurants']
 end
 

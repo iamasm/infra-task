@@ -7,3 +7,6 @@ terraform.tfvars
 # OS X files
 .history
 .DS_Store
+
+# PyCharm files
+.idea/

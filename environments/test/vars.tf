@@ -3,7 +3,7 @@
 #################################################
 variable "candidate_name" {
     description = "Hey! Thanks for working on this sample project. Let's start with your name."
-    default = "YOUR_NAME"
+    default = "Alex Mozgovoy"
 }
 
 variable "environment" {
@@ -13,7 +13,7 @@ variable "environment" {
 
 variable "provisioning_key" {
     description = "A key that can be used to connect and provision instances in AWS."
-    default = ""
+    default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCadOVuCQu7y4Y8PedvYa0ZX2vZLTQdLwlZzkzq4vr5L8aEMMmP3MxkVyMBxJqEEVphIpbNmIXV7MbYRpvZAOPs8kWadCRJCHJgvOv0DW82vHyV8x+rTD52nGsUfW9iIxnl7jn/rg+bz1cUknotztb+riAUEa0fC8uqtaD2qr6NkM2+FBnC0QLWt4NIpPE8k6lOSAj6ARJwWKJn3ribAM00cvP6rVBMPRnC42l1vsdpyYpv3bkeKn46AG9nf2+qOKXEyUsDl27ogFP4w2eIZhfLHwWBXGIFnam5jw2VIMHvn2fTU6Xh5a/tr/Hl8YlS+XCsGsjEMd4T+WD9Wx5HGnFdmW1mE2J/HwHhHs8oQmLZJP5vB3hV7MqsTaRNg353PfoMISgk+yIh8eFhq7AeYD6haSXqZgD7osJei5RzuyAQkOZFJaSJ/c2vyQuW7NxKOWeowI+AU+b/zdof/5z9ukCzHrmN+tnUIS+sS3fV0e4zCc/JulcCEHVxIrzET7Dta6rCkJKsmuiuwV0wgintFpNwvpaVE/Cyl5O7K7stm5Ih5Dg8yo+TFQzypVnKoKFLX6fWKP/C0xDS6t6pkiee2UGZqbX37q9bhJ35F2fyo78gmMNWfOUYdBukniuZUHqyR3lQ+VmYPjrVF9dxoUalwgoJaB9mwcy0VdTGzhQtpi5RnQ== amozgovoy@me.com"
 }
 
 #################################################
@@ -77,7 +77,7 @@ variable "mongo_count" {
 
 variable "mongo_ami" {
     description = "The ami to use for the mongodb instance. Here we're just using an Ubuntu 14.04 LTS public image."
-    default = "ami-4d202037"
+    default = "ami-07ebfd5b3428b6f4d" # 14.04 is no longer supported, going to use 18.04
 }
 
 variable "mongo_instance_type" {
@@ -100,7 +100,7 @@ variable "mongo_volume_size" {
 #################################################
 variable "app_ami" {
     description = "The ami to use for the application instance. Here we're just using an Ubuntu 14.04 LTS public image."
-    default = "ami-4d202037"
+    default = "ami-07ebfd5b3428b6f4d"
 }
 
 variable "app_instance_type" {
