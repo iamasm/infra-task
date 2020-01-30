@@ -1,5 +1,4 @@
-#How to run the code
-
+# How to run the code
 ## Prerequisites
 - AWS account where the instances will be located;
 - Mac or Linux workstation with console access. Windows might work too, but I haven't tested it yet.
